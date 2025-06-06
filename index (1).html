@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firma la Cheie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #005baa; color: white; padding: 20px; text-align: center; }
+    nav { background: #004080; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; max-width: 800px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { color: #005baa; }
+    form input, form textarea, form select, form button {
+      width: 100%; padding: 10px; margin: 8px 0; border-radius: 4px; border: 1px solid #ccc;
+    }
+    form button {
+      background: #005baa; color: white; border: none; cursor: pointer;
+    }
+    form button:hover {
+      background: #003f80;
+    }
+    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #666; }
+    .whatsapp-button {
+      display: block;
+      width: 100%;
+      background: #25D366;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .whatsapp-button:hover {
+      background: #1ebe5b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Firma la Cheie</h1>
+    <p>Redactare documente pentru Registrul Comerțului - simplu și rapid</p>
+  </header>
+
+  <nav>
+    <a href="#servicii">Servicii</a>
+    <a href="#tarife">Tarife</a>
+    <a href="#formular">Comandă</a>
+  </nav>
+
+  <section id="servicii">
+    <h2>Serviciile Noastre</h2>
+    <ul>
+      <li>Înființare societăți comerciale (SRL, SRL-D)</li>
+      <li>Înființare PFA, II, IF – conform OUG 44/2008</li>
+      <li>Înscriere mențiuni: sediu, asociat, administrator, cod CAEN, capital</li>
+      <li>Dizolvări, radieri, suspendări de activitate</li>
+      <li>Contracte de comodat, de închiriere și alte documente justificative</li>
+    </ul>
+  </section>
+
+  <section id="tarife">
+    <h2>Tarife</h2>
+    <ul>
+      <li>Înființare SRL – 450 lei (include toate formularele + contract sediu social/punct de lucru)</li>
+      <li>Înființare PFA / II / IF – 300 lei</li>
+      <li>Mențiuni pentru persoane juridice – între 350 și 500 lei (în funcție de complexitate)</li>
+    </ul>
+  </section>
+
+  <section id="formular">
+    <h2>Comandă Serviciile Noastre</h2>
+    <form action="https://formsubmit.co/firmalacheie@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Cerere de servicii firma la cheie">
+
+      <label for="nume">Nume complet:</label>
+      <input type="text" id="nume" name="nume" required>
+
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="serviciu">Tip serviciu dorit:</label>
+      <select id="serviciu" name="serviciu" required>
+        <option value="">Selectează...</option>
+        <option>Înființare SRL</option>
+        <option>Înființare PFA / II / IF</option>
+        <option>Mențiune firmă (modificare sediu, asociat etc.)</option>
+        <option>Dizolvare / Radiere firmă</option>
+        <option>Altele</option>
+      </select>
+
+      <label for="mesaj">Detalii suplimentare:</label>
+      <textarea id="mesaj" name="mesaj" rows="4"></textarea>
+
+      <button type="submit">Trimite comanda</button>
+    </form>
+
+    <a class="whatsapp-button" href="https://wa.me/40712345678" target="_blank">
+      Sau contactează-ne pe WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Firma la Cheie. Toate drepturile rezervate.
+  </footer>
+
+</body>
+</html>
